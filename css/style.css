@@ -4,19 +4,26 @@
   --darkGreen : #28b485;
 }
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-weight: 400;
   line-height: 1.7;
-  padding: 30px;
+  padding: 3rem;
   color: #777;
+  box-sizing: border-box;
 }
 
 /* header */
@@ -41,12 +48,12 @@ body {
 
 .header__logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .header__logo{
-  height: 30px;
+  height: 3rem;
 }
 
 .header__text-box{
@@ -71,8 +78,8 @@ body {
 
 .heading-primary--main {
   font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 35px;
+  font-size: 6rem;
+  letter-spacing: 3.5rem;
   display: block;
 
   animation-name: moveInLeft;
@@ -81,8 +88,8 @@ body {
 }
 
 .heading-primary--sub {
-  font-size: 20px;
-  letter-spacing: 17.5px;
+  font-size: 2rem;
+  letter-spacing: 1.75rem;
   font-weight: 700;
   display: block;
 
@@ -94,11 +101,11 @@ body {
 @keyframes moveInLeft{
   0%{
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   80%{
     opacity: 0.8;
-    transform: translateX(15px);
+    transform: translateX(1.5rem);
   }
   100%{
     opacity: 1;
@@ -109,11 +116,11 @@ body {
 @keyframes moveInRight{
   0%{
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   80%{
     opacity: 0.8;
-    transform: translateX(-15px);
+    transform: translateX(-1.5rem);
   }
   100%{
     opacity: 1;
@@ -124,7 +131,7 @@ body {
 @keyframes moveInBottom{
   0%{
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
   100%{
     opacity: 1;
@@ -136,22 +143,22 @@ body {
 .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 40px;
-  font-size: 16px;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
 }
 
 .btn:active{
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
 }
 
 .btn--white {
@@ -164,7 +171,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
