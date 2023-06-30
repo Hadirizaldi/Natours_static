@@ -230,6 +230,29 @@ body {
   transform: scale(0.9);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.feature-box__icon {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box__text {
+  font-size: 1.5rem;
+}
+.feature-box:hover {
+  transform: scale(1.05) translateY(-1.5rem);
+}
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   height: 95vh;
@@ -263,7 +286,7 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin: -20vh 0;
+  margin-top: -20vh 0;
 }
 .section-about__content-box {
   display: flex;
@@ -276,5 +299,26 @@ body {
   width: 50%;
 }
 .section-about .card-right {
+  width: 50%;
+}
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -10rem;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+.section-features__content-box {
+  display: flex;
+  max-width: 114rem;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 6rem;
+}
+.section-features__card {
   width: 50%;
 }
