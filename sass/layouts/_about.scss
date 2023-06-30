@@ -1,14 +1,10 @@
 .section-about {
   background-color: $color-grey-1;
   padding: 25rem 0;
-  margin-top: -20vh 0;
+  margin-top: -20vh;
 
   &__content-box {
-    display: flex;
-    max-width: 114rem;
-    margin: 0 auto ;
-    gap: 6rem;
-    justify-content: space-around;
+    @include flex-format;
   }
 
   .card-left {

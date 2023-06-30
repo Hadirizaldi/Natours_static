@@ -10,12 +10,7 @@
   }
 
   &__content-box{
-    display: flex;
-    max-width: 114rem;
-    margin: 0 auto ;
-    justify-content: space-around;
-    gap: 6rem;
-
+    @include flex-format;
   }
 
   &__card {

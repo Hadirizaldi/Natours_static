@@ -10,3 +10,11 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+@mixin flex-format{
+  display: flex;
+  max-width: 114rem;
+  margin: 0 auto ;
+  justify-content: space-around;
+  gap: 6rem;
+}
