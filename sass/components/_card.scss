@@ -2,29 +2,110 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
-    color: $color-white;
-    font-size: 2rem;
-    height: 50rem;
+    height: 52rem;
     box-shadow: 0 1.5rem 4rem rgba($color: $color-black, 
     $alpha: 0.15);
+    border-radius: 3px;
     transition: all 0.8s;
 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
     backface-visibility: hidden;
 
     &--front {
       background-color: $color-white;
       
+      &-header {
+        position: relative;
+  
+          &__picture {
+            background-size: cover;
+            height: 23rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            background-blend-mode: screen;
+
+            &--1 {
+              background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+              url(../img/nat-5.jpg);
+            }
+
+            &--2 {
+              background-image: url(../img/nat-5.jpg);
+            }
+
+            &--3 {
+              background-image: url(../img/nat-5.jpg);
+            }
+          }
+
+          &__title{
+            font-size: 2.8rem;
+            color: $color-white;
+            font-weight: 300;
+            text-align: right;
+            text-transform: uppercase;
+            position: absolute;
+            top: 12rem;
+            right: 2rem;
+            width: 75%;
+
+            .header__title-span {
+              padding: 1rem 1.5rem;
+              -webkit-box-decoration-break: clone;
+              box-decoration-break: clone;
+
+              &--1{
+                background-image: linear-gradient(to right bottom, 
+                rgba($color-secondary-light, 0.85), 
+                rgba($color-secondary-dark, 0.85));
+              }
+
+              &--2{
+                background-image: linear-gradient(to right bottom, 
+                rgba($color-primary-light, 0.85), 
+                rgba($color-primary-dark, 0.85));
+              }
+
+              &--3{
+                background-image: linear-gradient(to right bottom, 
+                rgba($color-tersiary-light, 0.85), 
+                rgba($color-tersiary-dark, 0.85));
+              }
+            }
+          }
+      }
+
+      &-details {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+
+        ul {
+          list-style: none;
+          width: 80%;
+
+          li{
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid $color-grey-2;
+            }
+          }
+        }
+      }
     }
 
     &--back {
-      transform: rotateY(-180deg);
+      transform: rotateY(180deg);
 
       &--1{
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
