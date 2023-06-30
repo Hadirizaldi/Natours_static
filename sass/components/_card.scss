@@ -32,16 +32,24 @@
             background-blend-mode: screen;
 
             &--1 {
-              background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+              background-image: linear-gradient(to right bottom, 
+              $color-secondary-light, 
+              $color-secondary-dark),
               url(../img/nat-5.jpg);
             }
 
             &--2 {
-              background-image: url(../img/nat-5.jpg);
+              background-image: linear-gradient(to right bottom, 
+              $color-primary-light, 
+              $color-primary-dark),
+              url(../img/nat-6.jpg);
             }
 
             &--3 {
-              background-image: url(../img/nat-5.jpg);
+              background-image: linear-gradient(to right bottom, 
+              $color-tersiary-light, 
+              $color-tersiary-dark),
+              url(../img/nat-7.jpg);
             }
           }
 
