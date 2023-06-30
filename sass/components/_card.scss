@@ -106,7 +106,38 @@
 
     &--back {
       transform: rotateY(180deg);
+      position: relative;
 
+      .card__cta {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card__price-box{
+          text-align: center;
+
+          .card__price-only {
+            color: $color-white;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+          }
+
+          .card__price-value{
+            color: $color-white;
+            font-size: 6rem;
+            font-weight: 100;
+
+          }
+
+        }
+      }
       &--1{
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
       }

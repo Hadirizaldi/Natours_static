@@ -338,6 +338,31 @@ body {
 }
 .card-content__side--back {
   transform: rotateY(180deg);
+  position: relative;
+}
+.card-content__side--back .card__cta {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-content__side--back .card__cta .card__price-box {
+  text-align: center;
+}
+.card-content__side--back .card__cta .card__price-box .card__price-only {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card-content__side--back .card__cta .card__price-box .card__price-value {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 100;
 }
 .card-content__side--back--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
