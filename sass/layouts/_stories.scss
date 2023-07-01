@@ -1,6 +1,7 @@
 .section-stories{
   padding: 15rem 0;
-  background-color: $color-grey-1;
+
+  position: relative;
 
   &__content-box{
     @include flex-format;

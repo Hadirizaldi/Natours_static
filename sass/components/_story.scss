@@ -3,7 +3,7 @@
   box-shadow: 0 3rem 6rem 
     rgba($color: $color-black, 
     $alpha: 0.15);
-  background-color: $color-white;
+  background-color: rgba($color: $color-white, $alpha: 0.6);
   padding: 6rem;
   padding-left: 9rem;
   border-radius: 3px;
@@ -16,7 +16,6 @@
     height: 15rem;
     width: 15rem;
     float: left;
-    background-color: purple;
 
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
