@@ -132,6 +132,10 @@ body {
   margin-top: 8rem;
 }
 
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -391,6 +395,30 @@ body {
   transform: rotateY(0);
 }
 
+.story {
+  width: 100%;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 6rem;
+  padding-left: 9rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
+}
+.story__shape {
+  height: 15rem;
+  width: 15rem;
+  float: left;
+  background-color: purple;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  transform: translateX(-3rem);
+}
+.story__image {
+  height: inherit;
+}
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
   height: 95vh;
@@ -476,4 +504,22 @@ body {
 }
 .section-tours__card {
   width: 50%;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
+}
+.section-stories__content-box {
+  display: flex;
+  max-width: 114rem;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 6rem;
+  flex-direction: column;
+  align-items: center;
+}
+.section-stories__story-card {
+  width: 75%;
+  margin: 0 auto;
 }
