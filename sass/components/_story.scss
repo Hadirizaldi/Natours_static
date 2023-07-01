@@ -8,6 +8,8 @@
   padding-left: 9rem;
   border-radius: 3px;
 
+  transform: skewX(-12deg);
+
   font-size: $default-font-size;
 
   &__shape{
@@ -15,15 +17,24 @@
     width: 15rem;
     float: left;
     background-color: purple;
+
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    transform: translateX(-3rem);
+    transform: translateX(-3rem) skewX(12deg);
 
   }
 
   &__image {
     height: inherit;
   }
+
+
+  &__text {
+    
+
+    transform: (12deg);
+  }
+  
 }
